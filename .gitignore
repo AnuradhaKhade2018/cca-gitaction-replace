@@ -38,3 +38,4 @@ Thumbs.db
 node_modules/
 /.vs/cca-gitaction-replace/FileContentIndex/a2655c20-a3df-4335-9d90-652c42ca49e5.vsidx
 *.vsidx
+/.vs/cca-gitaction-replace/v17

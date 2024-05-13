@@ -62,11 +62,11 @@ const doReplaceJson = async (file) => {
 
   paths = [];
   getPaths(json);
-
+    core.info(`zjson ${json}`);
   paths.forEach((path) => {
     // does the variable exist in the env?
     const env = process.env[path] || "not found";
-
+      core.info(`zenv ${env}`);
     if (env !== "not found") {
       core.info(`Replacing placeholder for ${path}`);
       set(json, path, env);
