@@ -1,0 +1,22 @@
+name: replace
+description: Replace placeholders in files with values
+branding:
+  icon: edit
+  color: orange
+
+inputs:
+  files:
+    description: Files containing placeholders. Can be a file, multiple files or a directory
+    required: true
+  prefix:
+    description: "prefix/suffix used for the placeholder, e.g. for #{...}#, the prefix is #"
+    required: false
+    default: "#"
+  omit-suffix:
+    description: "Only use a prefix for the placeholder, do not include a suffix, e.g. #{...}"
+    required: false
+    default: false
+
+runs:
+  using: node20
+  main: dist/index.js
