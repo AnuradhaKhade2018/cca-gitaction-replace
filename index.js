@@ -63,6 +63,7 @@ const doReplaceJson = async (file) => {
   paths = [];
   getPaths(json);
     core.info(`zjson ${json}`);
+    core.info(`zpath ${path}`);
   paths.forEach((path) => {
     // does the variable exist in the env?
     const env = process.env[path] || "not found";
